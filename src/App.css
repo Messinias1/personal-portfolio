@@ -315,6 +315,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+p.intro {
+  color: rgb(252, 252, 252);
+}
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
@@ -356,12 +360,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
-.project {
+/* .project {
   padding: 120px 0;
   z-index: -1;
   position: relative;
   background-color: black;
-}
+} */
 .project h2 {
   font-size: 45px;
   font-weight: 700;
@@ -482,7 +486,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   padding: 60px 0 200px 0;

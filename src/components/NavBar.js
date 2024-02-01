@@ -74,12 +74,12 @@ export const NavBar = () => {
               <a href="https://www.linkedin.com/in/carl-kakisis/">
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <img src={navIcon2} alt="" />
               </a>
               <a href="#">
                 <img src={navIcon3} alt="" />
-              </a>
+              </a> */}
             </div>
             <a href="#connect">
               <button

@@ -16,15 +16,15 @@ export const Footer = () => {
           </Col>
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="">
+              <a href="https://www.linkedin.com/in/carl-kakisis/">
                 <img src={navIcon1} />
               </a>
-              <a href="">
+              {/* <a href="">
                 <img src={navIcon2} />
               </a>
               <a href="">
                 <img src={navIcon3} />
-              </a>
+              </a> */}
             </div>
             <p>Copyright 2024. All Rights Reserved Carl Kakisis</p>
           </Col>

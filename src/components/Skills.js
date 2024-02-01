@@ -35,7 +35,7 @@ export const Skills = () => {
             <div className="skill-bx">
               <h2>Skills</h2>
               <p>
-                Alskjdfef ksjnbdfie ksjfb ksjf. <br></br>
+                Here is a carousel of my relevant skills.<br></br>
               </p>
               <Carousel
                 responsive={responsive}
@@ -48,15 +48,31 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
+                  <h5>Software Engineering</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <h5>App Development</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <h5>UI/UX Design</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Image" />
+                  <h5>Javascript/HTML/CSS</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="Image" />
+                  <h5>MongoDB/Express/React/Node.js</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Image" />
+                  <h5>Version Control/Git/GitHub</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Image" />
+                  <h5>Python/C++/SQL</h5>
                 </div>
               </Carousel>
             </div>

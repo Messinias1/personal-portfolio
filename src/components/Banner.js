@@ -6,6 +6,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
+  const [activeLink, setActiveLink] = useState("home");
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ["Software Engineer", "Web Developer", "UI/UX Designer"];
@@ -46,6 +47,10 @@ export const Banner = () => {
     }
   };
 
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -63,15 +68,22 @@ export const Banner = () => {
                     {`Hi I'm Carl Kakisis, a `}
                     <span className="wrap">{text}</span>
                   </h1>
-                  <p>shd kjsafhk ksjhdf ksjdhksadj k dh k djh kajdh kas </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let's Connect <ArrowRightCircle size={25} />
-                  </button>
+                  <p className="intro">
+                    Diving deep into the world of code, I sculpt digital
+                    experiences that resonate and transform. Currently based in
+                    Rhode Island, I'm dedicated to turning complex problems into
+                    elegant solutions.
+                  </p>
+                  <a href="#connect">
+                    <button onClick={() => onUpdateActiveLink("connect")}>
+                      Let's Connect <ArrowRightCircle size={25} />
+                    </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={3}>
+          <Col xs={12} md={6} xl={2}>
             <img src={headerImg} alt="Header Img" />
           </Col>
         </Row>
