@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Container, Col, Tab, Row, Nav } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -28,12 +30,14 @@ export const Contact = () => {
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "Application/json;charset=utf-8",
+        "Content-Type": "Application/json",
+        // ;charset=utf-8
       },
       body: JSON.stringify(formDetails),
     });
     setButtonText("Send");
-    let result = response.json();
+    let result = await response.json();
+    console.log(result);
     setFormDetails(formInitialDetails);
     if (result.code === 200) {
       setStatus({ success: true, message: "Message sent successfully" });
@@ -43,6 +47,7 @@ export const Contact = () => {
         message: "Something went wrong, please try again later.",
       });
     }
+    console.log(result.code);
   };
 
   return (
@@ -53,7 +58,17 @@ export const Contact = () => {
             <img src={contactImg} alt="Contact Us" />
           </Col>
           <Col md={6}>
-            <h2>Get In Touch</h2>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__heartBeat" : ""
+                  }
+                >
+                  <h2>Get In Touch</h2>
+                </div>
+              )}
+            </TrackVisibility>
             <form onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">

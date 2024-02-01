@@ -60,7 +60,7 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__bounce" : ""
+                    isVisible ? "animate__animated animate__pulse" : ""
                   }
                 >
                   <span className="tagLine">Welcome to my Portfolio</span>

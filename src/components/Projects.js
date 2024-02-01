@@ -50,7 +50,7 @@ export const Projects = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__bounce" : ""
+                    isVisible ? "animate__animated animate__pulse" : ""
                   }
                 >
                   <h2>Projects</h2>
@@ -82,8 +82,8 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
+                <Tab.Pane eventKey="second"></Tab.Pane>
+                <Tab.Pane eventKey="third"></Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
