@@ -1,9 +1,23 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import nodeImg from "../assets/img/icons8-node-js.svg";
+import javascriptImg from "../assets/img/icons8-javascript.svg";
+import htmlImg from "../assets/img/icons8-html.svg";
+import cssImg from "../assets/img/icons8-css.svg";
+import reactImg from "../assets/img/icons8-react-native.svg";
+import pythonImg from "../assets/img/icons8-python.svg";
+import cPlusImg from "../assets/img/icons8-c.svg";
+import expressImg from "../assets/img/icons8-express-js.svg";
+import mongoImg from "../assets/img/icons8-mongodb.svg";
+import sqlImg from "../assets/img/icons8-mysql.svg";
+import gitImg from "../assets/img/icons8-git.svg";
+
 import colorSharp from "../assets/img/color-sharp.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -28,6 +42,16 @@ export const Skills = () => {
     },
   };
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   return (
     <section className="skill" id="skills">
       <Container>
@@ -48,44 +72,57 @@ export const Skills = () => {
                   </div>
                 )}
               </TrackVisibility>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
+              <Slider
+                // responsive={responsive}
+                // infinite={true}
                 className="skill-slider"
+                {...settings}
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={javascriptImg} alt="Image" />
+                  <h5>Javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Software Engineering</h5>
+                  <img src={htmlImg} alt="Image" />
+                  <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>App Development</h5>
+                  <img src={cssImg} alt="Image" />
+                  <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>UI/UX Design</h5>
+                  <img src={reactImg} alt="Image" />
+                  <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Javascript/HTML/CSS</h5>
+                  <img src={pythonImg} alt="Image" />
+                  <h5>Python</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>MongoDB/Express/React/Node.js</h5>
+                  <img src={cPlusImg} alt="Image" />
+                  <h5>C++</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Version Control/Git/GitHub</h5>
+                  <img src={expressImg} alt="Image" />
+                  <h5>Express js</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Python/C++/SQL</h5>
+                  <img src={mongoImg} alt="Image" />
+                  <h5>MongoDB</h5>
                 </div>
-              </Carousel>
+                <div className="item">
+                  <img src={sqlImg} alt="Image" />
+                  <h5>SQL</h5>
+                </div>
+                <div className="item">
+                  <img src={gitImg} alt="Image" />
+                  <h5>Git/Github</h5>
+                </div>
+                <div className="item">
+                  <img src={nodeImg} alt="Image" />
+                  <h5>Node js</h5>
+                </div>
+              </Slider>
             </div>
           </Col>
         </Row>

@@ -70,9 +70,8 @@ export const Banner = () => {
                   </h1>
                   <p className="intro">
                     Diving deep into the world of code, I sculpt digital
-                    experiences that resonate and transform. Currently based in
-                    Rhode Island, I'm dedicated to turning complex problems into
-                    elegant solutions.
+                    experiences that resonate and transform. I'm dedicated to
+                    turning complex problems into elegant solutions.
                   </p>
                   <a href="#connect">
                     <button onClick={() => onUpdateActiveLink("connect")}>

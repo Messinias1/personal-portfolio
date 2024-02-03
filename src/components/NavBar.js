@@ -5,8 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { useState, useEffect } from "react";
 import logo from "../assets/img/CK-Logo.jpg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import gitIcon from "../assets/img/icons8-github-128.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -29,6 +28,8 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
+
+  const resumeLink = "/SW Resume.pdf";
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -68,18 +69,22 @@ export const NavBar = () => {
             >
               Projects
             </Nav.Link>
+            <a
+              href={resumeLink}
+              download="SW Resume.pdf"
+              className="navbar-link"
+            >
+              Download Resume
+            </a>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/carl-kakisis/">
                 <img src={navIcon1} alt="" />
               </a>
-              {/* <a href="#">
-                <img src={navIcon2} alt="" />
+              <a href="https://github.com/Messinias1">
+                <img src={gitIcon} alt="" />
               </a>
-              <a href="#">
-                <img src={navIcon3} alt="" />
-              </a> */}
             </div>
             <a href="#connect">
               <button

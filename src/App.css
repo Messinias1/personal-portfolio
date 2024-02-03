@@ -358,6 +358,19 @@ p.intro {
   width: 40%;
   z-index: -4;
 }
+.slick-dots li {
+  margin: 0 5px; /* Adjust spacing between dots */
+}
+
+.slick-dots li button:before {
+  font-size: 12px; /* Adjust the size of the dots */
+  color: white; /* Dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: white; /* Active dot color */
+}
 
 /************ Projects Css ************/
 /* .project {

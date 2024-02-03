@@ -2,8 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
 import logo from "../assets/img/CK-Logo.jpg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import gitIcon from "../assets/img/icons8-github-128.svg";
 
 export const Footer = () => {
   return (
@@ -19,12 +18,9 @@ export const Footer = () => {
               <a href="https://www.linkedin.com/in/carl-kakisis/">
                 <img src={navIcon1} />
               </a>
-              {/* <a href="">
-                <img src={navIcon2} />
+              <a href="https://github.com/Messinias1">
+                <img src={gitIcon} />
               </a>
-              <a href="">
-                <img src={navIcon3} />
-              </a> */}
             </div>
             <p>Copyright 2024. All Rights Reserved Carl Kakisis</p>
           </Col>

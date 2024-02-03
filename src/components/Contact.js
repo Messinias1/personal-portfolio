@@ -40,7 +40,10 @@ export const Contact = () => {
     console.log(result);
     setFormDetails(formInitialDetails);
     if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully" });
+      setStatus({
+        success: true,
+        message: "Message sent successfully. Thank you for reaching out!",
+      });
     } else {
       setStatus({
         success: false,
