@@ -1,11 +1,8 @@
 import { Container, Col, Row } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import meter1 from "../assets/img/meter1.svg";
 import nodeImg from "../assets/img/icons8-node-js.svg";
 import javascriptImg from "../assets/img/icons8-javascript.svg";
 import htmlImg from "../assets/img/icons8-html.svg";
@@ -127,7 +124,7 @@ export const Skills = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} />
+      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );
 };

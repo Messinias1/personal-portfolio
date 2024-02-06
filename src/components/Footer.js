@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { MailchimpForm } from "./MailchimpForm";
 import logo from "../assets/img/CK-Logo.jpg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import gitIcon from "../assets/img/icons8-github-128.svg";
@@ -16,10 +15,10 @@ export const Footer = () => {
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/carl-kakisis/">
-                <img src={navIcon1} />
+                <img src={navIcon1} alt="" />
               </a>
               <a href="https://github.com/Messinias1">
-                <img src={gitIcon} />
+                <img src={gitIcon} alt="" />
               </a>
             </div>
             <p>Copyright 2024. All Rights Reserved Carl Kakisis</p>

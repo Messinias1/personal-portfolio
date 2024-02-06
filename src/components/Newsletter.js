@@ -1,6 +1,5 @@
-import { Alert } from "react-bootstrap";
+import { Alert, Col, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import { Col, Row } from "react-bootstrap";
 
 export const Newsletter = ({ onValidated, status, message }) => {
   const [email, setEmail] = useState("");
