@@ -78,6 +78,7 @@ export const Contact = () => {
               data-netlify="true"
               name="contactForm"
               action="/thank-you"
+              netlify
             >
               <input type="hidden" name="form-name" value="contactForm" />
 
