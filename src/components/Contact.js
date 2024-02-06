@@ -14,7 +14,8 @@ export const Contact = () => {
   };
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Send");
+  const [buttonText] = useState("Send");
+  // setButtonText
   const [status] = useState({});
   // setStatus
 
@@ -25,34 +26,34 @@ export const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Sending...");
-    //   // let response = await fetch("http://localhost:5000/contact", {
-    //   //   method: "POST",
-    //   //   headers: {
-    //   //     "Content-Type": "Application/json",
-    //   //     // ;charset=utf-8
-    //   //   },
-    //   //   body: JSON.stringify(formDetails),
-    //   // });
-    //   setButtonText("Send");
-    //   // let result = await response.json();
-    //   // console.log(result);
-    //   setFormDetails(formInitialDetails);
-    //   if (result.code === 200) {
-    //     setStatus({
-    //       success: true,
-    //       message: "Message sent successfully. Thank you for reaching out!",
-    //     });
-    //   } else {
-    //     setStatus({
-    //       success: false,
-    //       message: "Something went wrong, please try again later.",
-    //     });
-    //   }
-    //   console.log(result.code);
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setButtonText("Sending...");
+  //   // let response = await fetch("http://localhost:5000/contact", {
+  //   //   method: "POST",
+  //   //   headers: {
+  //   //     "Content-Type": "Application/json",
+  //   //     // ;charset=utf-8
+  //   //   },
+  //   //   body: JSON.stringify(formDetails),
+  //   // });
+  //   setButtonText("Send");
+  //   // let result = await response.json();
+  //   // console.log(result);
+  //   setFormDetails(formInitialDetails);
+  //   if (result.code === 200) {
+  //     setStatus({
+  //       success: true,
+  //       message: "Message sent successfully. Thank you for reaching out!",
+  //     });
+  //   } else {
+  //     setStatus({
+  //       success: false,
+  //       message: "Something went wrong, please try again later.",
+  //     });
+  //   }
+  //   console.log(result.code);
+  // };
 
   return (
     <section className="contact" id="connect">
@@ -74,11 +75,11 @@ export const Contact = () => {
               )}
             </TrackVisibility>
             <form
-              onSubmit={handleSubmit}
+              onSubmit="submit"
               data-netlify="true"
               name="contactForm"
-              action="/thank-you"
-              netlify
+              method="POST"
+              //action="/thank-you"
             >
               <input type="hidden" name="form-name" value="contactForm" />
 
