@@ -20,24 +20,24 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     breakpoint: { max: 4000, min: 3000 },
+  //     items: 5,
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 3,
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 464 },
+  //     items: 2,
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 464, min: 0 },
+  //     items: 1,
+  //   },
+  // };
 
   const settings = {
     dots: true,
@@ -76,47 +76,47 @@ export const Skills = () => {
                 {...settings}
               >
                 <div className="item">
-                  <img src={javascriptImg} alt="Image" />
+                  <img src={javascriptImg} alt="" />
                   <h5>Javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={htmlImg} alt="Image" />
+                  <img src={htmlImg} alt="" />
                   <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={cssImg} alt="Image" />
+                  <img src={cssImg} alt="" />
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={reactImg} alt="Image" />
+                  <img src={reactImg} alt="" />
                   <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={pythonImg} alt="Image" />
+                  <img src={pythonImg} alt="" />
                   <h5>Python</h5>
                 </div>
                 <div className="item">
-                  <img src={cPlusImg} alt="Image" />
+                  <img src={cPlusImg} alt="" />
                   <h5>C++</h5>
                 </div>
                 <div className="item">
-                  <img src={expressImg} alt="Image" />
+                  <img src={expressImg} alt="" />
                   <h5>Express js</h5>
                 </div>
                 <div className="item">
-                  <img src={mongoImg} alt="Image" />
+                  <img src={mongoImg} alt="" />
                   <h5>MongoDB</h5>
                 </div>
                 <div className="item">
-                  <img src={sqlImg} alt="Image" />
+                  <img src={sqlImg} alt="" />
                   <h5>SQL</h5>
                 </div>
                 <div className="item">
-                  <img src={gitImg} alt="Image" />
+                  <img src={gitImg} alt="" />
                   <h5>Git/Github</h5>
                 </div>
                 <div className="item">
-                  <img src={nodeImg} alt="Image" />
+                  <img src={nodeImg} alt="" />
                   <h5>Node js</h5>
                 </div>
               </Slider>

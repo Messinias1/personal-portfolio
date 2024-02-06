@@ -6,10 +6,14 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
-  const [activeLink, setActiveLink] = useState("home");
+  const [setActiveLink] = useState("home");
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Software Engineer", "Web Developer", "UI/UX Designer"];
+  const toRotate = [
+    "Software Engineer",
+    "Web Developer",
+    "Fullstack Developer",
+  ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
