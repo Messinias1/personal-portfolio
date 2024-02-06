@@ -1,29 +1,34 @@
 import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/project-img1.png";
+import projImg1 from "../assets/img/svenska_101.PNG";
 import projImg2 from "../assets/img/forkify.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg3 from "../assets/img/305zombie.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Svenska 101",
+      description:
+        "Swedish social media app. Connect, message, comment, and listen to Swedish radio. \n Built with React, Express, Node.js, and MongoDB.",
       imgUrl: projImg1,
+      projectUrl: "https://github.com/Messinias1/Svenska",
     },
     {
       title: "Spoonful",
-      description: "Recipe Lookup Website",
+      description:
+        "Recipe lookup website, add a recipe, and bookmark recipes. \n Built with Javascript, HTML, CSS. Uploaded to netlify.",
       imgUrl: projImg2,
       projectUrl: "https://spoonful-carl.netlify.app/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Zombie Game",
+      description:
+        "Wave based zombie game. Attack zombies, collect coins and health potions. \n Built with python and pygame.",
       imgUrl: projImg3,
+      projectUrl: "https://github.com/CSC305/f22m",
     },
   ];
 

@@ -489,6 +489,7 @@ p.intro {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+  white-space: normal;
 }
 .background-image-right {
   top: 20%;
