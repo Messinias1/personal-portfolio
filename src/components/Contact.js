@@ -72,7 +72,13 @@ export const Contact = () => {
                 </div>
               )}
             </TrackVisibility>
-            <form onSubmit={handleSubmit}>
+            <form
+              onSubmit={handleSubmit}
+              data-netlify="true"
+              name="contactForm"
+            >
+              <input type="hidden" name="form-name" value="contactForm" />
+
               <Row>
                 <Col sm={6} className="px-1">
                   <input
