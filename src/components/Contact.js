@@ -64,9 +64,9 @@ export const Contact = () => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
-    });
-    //.then(() => alert("Success!"))
-    //.catch((error) => alert(error));
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
     // This is needed to prevent form from actually submitting and refreshing the page.
     setButtonText("Sending...");
     // Since Netlify handles the submission, you might only change this text or status based on a successful redirect or using AJAX if you prefer.
@@ -80,7 +80,7 @@ export const Contact = () => {
         message: "Message sent successfully. Thank you for reaching out!",
         success: true,
       }); // Simulated success message
-    }); // Delay for demonstration, remove in actual use
+    }, 2000); // Delay for demonstration, remove in actual use
   };
 
   return (
@@ -107,6 +107,7 @@ export const Contact = () => {
               data-netlify="true"
               name="contact"
               method="post"
+              //action="/thank-you"
             >
               <input type="hidden" name="form-name" value="contact" />
 
