@@ -28,7 +28,7 @@ export const Projects = () => {
       description:
         "Wave based zombie game. Attack zombies, collect coins and health potions. \n Built with python and pygame.",
       imgUrl: projImg3,
-      projectUrl: "https://github.com/CSC305/f22m",
+      projectUrl: "https://github.com/Messinias1/Zombie-Game",
     },
   ];
 

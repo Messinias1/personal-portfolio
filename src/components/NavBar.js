@@ -70,7 +70,7 @@ export const NavBar = () => {
             </Nav.Link>
             <a
               href={resumeLink}
-              download="SW Resume.pdf"
+              download="WA Resume.pdf"
               className="navbar-link"
             >
               Download Resume
