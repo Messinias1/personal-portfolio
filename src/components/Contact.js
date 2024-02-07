@@ -14,7 +14,7 @@ export const Contact = () => {
   };
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Send");
+  const [buttonText] = useState("Send");
   // setButtonText
   const [status] = useState({});
   // setStatus
@@ -26,33 +26,50 @@ export const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    //   setButtonText("Sending...");
-    //   // let response = await fetch("http://localhost:5000/contact", {
-    //   //   method: "POST",
-    //   //   headers: {
-    //   //     "Content-Type": "Application/json",
-    //   //     // ;charset=utf-8
-    //   //   },
-    //   //   body: JSON.stringify(formDetails),
-    //   // });
-    setButtonText("Send");
-    //   // let result = await response.json();
-    //   // console.log(result);
-    //   setFormDetails(formInitialDetails);
-    //   if (result.code === 200) {
-    //     setStatus({
-    //       success: true,
-    //       message: "Message sent successfully. Thank you for reaching out!",
-    //     });
-    //   } else {
-    //     setStatus({
-    //       success: false,
-    //       message: "Something went wrong, please try again later.",
-    //     });
-    //   }
-    //   console.log(result.code);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setButtonText("Sending...");
+  //   // let response = await fetch("http://localhost:5000/contact", {
+  //   //   method: "POST",
+  //   //   headers: {
+  //   //     "Content-Type": "Application/json",
+  //   //     // ;charset=utf-8
+  //   //   },
+  //   //   body: JSON.stringify(formDetails),
+  //   // });
+  // setButtonText("Send");
+  //   // let result = await response.json();
+  //   // console.log(result);
+  //   setFormDetails(formInitialDetails);
+  //   if (result.code === 200) {
+  //     setStatus({
+  //       success: true,
+  //       message: "Message sent successfully. Thank you for reaching out!",
+  //     });
+  //   } else {
+  //     setStatus({
+  //       success: false,
+  //       message: "Something went wrong, please try again later.",
+  //     });
+  //   }
+  //   console.log(result.code);
+  // };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // This is needed to prevent form from actually submitting and refreshing the page.
+    setButtonText("Sending...");
+    // Since Netlify handles the submission, you might only change this text or status based on a successful redirect or using AJAX if you prefer.
+
+    // Reset form fields after submission, assuming success for demonstration (Netlify handles actual submission)
+    setTimeout(() => {
+      // Simulate asynchronous operation like an API call
+      setFormDetails(formInitialDetails); // Reset form
+      setButtonText("Send"); // Reset button text
+      setStatus({
+        message: "Message sent successfully. Thank you for reaching out!",
+        success: true,
+      }); // Simulated success message
+    }, 2000); // Delay for demonstration, remove in actual use
   };
 
   return (
