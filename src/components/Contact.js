@@ -65,22 +65,32 @@ export const Contact = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
+      .then(() =>
+        setStatus({
+          message: "Message sent successfully. Thank you for reaching out!",
+          success: true,
+        })
+      )
+      .catch((error) =>
+        setStatus({
+          success: false,
+          message: "Something went wrong, please try again later.",
+        })
+      );
     // This is needed to prevent form from actually submitting and refreshing the page.
     setButtonText("Sending...");
     // Since Netlify handles the submission, you might only change this text or status based on a successful redirect or using AJAX if you prefer.
 
     // Reset form fields after submission, assuming success for demonstration (Netlify handles actual submission)
-    setTimeout(() => {
-      // Simulate asynchronous operation like an API call
-      setFormDetails(formInitialDetails); // Reset form
-      setButtonText("Send"); // Reset button text
-      setStatus({
-        message: "Message sent successfully. Thank you for reaching out!",
-        success: true,
-      }); // Simulated success message
-    }, 2000); // Delay for demonstration, remove in actual use
+    // setTimeout(() => {
+    //   // Simulate asynchronous operation like an API call
+    //   setFormDetails(formInitialDetails); // Reset form
+    //   setButtonText("Send"); // Reset button text
+    //   setStatus({
+    //     message: "Message sent successfully. Thank you for reaching out!",
+    //     success: true,
+    //   }); // Simulated success message
+    // }, 2000); // Delay for demonstration, remove in actual use
   };
 
   return (
