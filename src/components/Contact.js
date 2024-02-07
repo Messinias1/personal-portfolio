@@ -56,6 +56,13 @@ export const Contact = () => {
   // };
 
   const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: JSON.stringify(formDetails),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
     e.preventDefault(); // This is needed to prevent form from actually submitting and refreshing the page.
     setButtonText("Sending...");
     // Since Netlify handles the submission, you might only change this text or status based on a successful redirect or using AJAX if you prefer.
