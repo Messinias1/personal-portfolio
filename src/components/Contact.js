@@ -77,11 +77,11 @@ export const Contact = () => {
             <form
               onSubmit="submit"
               data-netlify="true"
-              name="contactForm"
-              method="POST"
-              action="/thank-you"
+              name="contact"
+              method="post"
+              //action="/thank-you"
             >
-              <input type="hidden" name="form-name" value="contactForm" />
+              <input type="hidden" name="form-name" value="contact" />
 
               <Row>
                 <Col sm={6} className="px-1">
