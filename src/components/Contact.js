@@ -57,6 +57,7 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setButtonText("Sending...");
 
     const myForm = e.target;
     const formData = new FormData(myForm);
@@ -65,20 +66,22 @@ export const Contact = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() =>
+      .then(() => {
         setStatus({
           message: "Message sent successfully. Thank you for reaching out!",
           success: true,
-        })
-      )
+        });
+        setFormDetails(formInitialDetails);
+        setButtonText("Send");
+      })
       .catch((error) =>
         setStatus({
           success: false,
           message: "Something went wrong, please try again later.",
         })
       );
+
     // This is needed to prevent form from actually submitting and refreshing the page.
-    setButtonText("Sending...");
     // Since Netlify handles the submission, you might only change this text or status based on a successful redirect or using AJAX if you prefer.
 
     // Reset form fields after submission, assuming success for demonstration (Netlify handles actual submission)
