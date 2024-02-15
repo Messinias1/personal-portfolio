@@ -4,6 +4,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/svenska_101.PNG";
 import projImg2 from "../assets/img/forkify.png";
 import projImg3 from "../assets/img/305zombie.png";
+import projImg4 from "../assets/img/436_GUI_entry.PNG";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -26,9 +27,16 @@ export const Projects = () => {
     {
       title: "Zombie Game",
       description:
-        "Wave based zombie game. Attack zombies, collect coins and health potions. \n Built with python and pygame.",
+        "Wave based zombie game. Attack zombies, collect coins and health potions. Collaborated with a team of 8 for build. Built with python and pygame.",
       imgUrl: projImg3,
       projectUrl: "https://github.com/Messinias1/Zombie-Game",
+    },
+    {
+      title: "Allergy Tracker",
+      description:
+        "Web app that tracks family member's allergies. Users can view, add, update, and delete family members. All data is stored using MySQL. Built with Javascript, HTML, and CSS.",
+      imgUrl: projImg4,
+      projectUrl: "https://github.com/Messinias1/436Final",
     },
   ];
 
