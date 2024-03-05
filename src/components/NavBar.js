@@ -28,7 +28,7 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
-  const resumeLink = "/WA Resume.pdf";
+  const resumeLink = "/Res.pdf";
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -68,11 +68,7 @@ export const NavBar = () => {
             >
               Projects
             </Nav.Link>
-            <a
-              href={resumeLink}
-              download="WA Resume.pdf"
-              className="navbar-link"
-            >
+            <a href={resumeLink} download="Res.pdf" className="navbar-link">
               Download Resume
             </a>
           </Nav>
