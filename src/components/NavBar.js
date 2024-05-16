@@ -28,7 +28,7 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
-  const resumeLink = "/Res.pdf";
+  const resumeLink = "/Resume.pdf";
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
