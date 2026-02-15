@@ -140,9 +140,9 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__pulse" : ""
                   }
                 >
-                  <span className="tagLine">Welcome to my Portfolio</span>
+                  <span className="tagLine">Welcome to my Website</span>
                   <h1>
-                    {`Hi I'm Carl Kakisis, a `}
+                    {`Hi I'm Carl, a `}
                     <span
                       className={`wrap ${isFadingOut ? "fade-out" : "fade-in"}`}
                     >

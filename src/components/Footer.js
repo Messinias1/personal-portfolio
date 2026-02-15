@@ -21,7 +21,7 @@ export const Footer = () => {
                 <img src={gitIcon} alt="" />
               </a>
             </div>
-            <p>Copyright 2024. All Rights Reserved Carl Kakisis</p>
+            <p>Copyright 2025. All Rights Reserved Carl K</p>
           </Col>
         </Row>
       </Container>

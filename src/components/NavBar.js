@@ -8,14 +8,14 @@ import gitIcon from "../assets/img/icons8-github-128.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, seScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
-        seScrolled(true);
+        setScrolled(true);
       } else {
-        seScrolled(false);
+        setScrolled(false);
       }
     };
 
@@ -28,7 +28,7 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
-  const resumeLink = "/Resume.pdf";
+  // const resumeLink = "/Resume.pdf";
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -68,13 +68,13 @@ export const NavBar = () => {
             >
               Projects
             </Nav.Link>
-            <a href={resumeLink} download="Res.pdf" className="navbar-link">
+            {/* <a href={resumeLink} download="Res.pdf" className="navbar-link">
               Download Resume
-            </a>
+            </a> */}
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/carl-kakisis/">
+              <a href="https://www.linkedin.com/in/carl-andrew/">
                 <img src={navIcon1} alt="" />
               </a>
               <a href="https://github.com/Messinias1">

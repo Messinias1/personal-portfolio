@@ -14,6 +14,7 @@ import expressImg from "../assets/img/icons8-express-js.svg";
 import mongoImg from "../assets/img/icons8-mongodb.svg";
 import sqlImg from "../assets/img/icons8-mysql.svg";
 import gitImg from "../assets/img/icons8-git.svg";
+import awsImg from "../assets/img/aws-svgrepo-com.svg";
 
 import colorSharp from "../assets/img/color-sharp.png";
 import "animate.css";
@@ -94,6 +95,10 @@ export const Skills = () => {
                 <div className="item">
                   <img src={pythonImg} alt="" />
                   <h5>Python</h5>
+                </div>
+                <div className="item">
+                  <img src={awsImg} alt="" />
+                  <h5>AWS</h5>
                 </div>
                 <div className="item">
                   <img src={cPlusImg} alt="" />
